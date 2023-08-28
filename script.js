@@ -13,17 +13,22 @@ function setItems() {
         },
         {
             title: "endpoints", 
-            link: "https://github.com/ValeriodelleFave/endpoints",
-            isDone: true
+            link: "https://valeriodellefave.github.io/endpoints",
+            isDone: false
         },
         {
             title: "ValeriodelleFave.github.io", 
-            link: "https://github.com/ValeriodelleFave/ValeriodelleFave.github.io",
+            link: "https://valeriodellefave.github.io/",
             isDone: true
         },
         {
             title: "budget-manager", 
-            link: "https://github.com/ValeriodelleFave/budget-manager",
+            link: "https://valeriodellefave.github.io/budget-manager",
+            isDone: true
+        },
+        {
+            title: "Weather", 
+            link: "https://valeriodellefave.github.io/weather",
             isDone: true
         },
         {
@@ -69,7 +74,7 @@ function setItems() {
         {
             title: "app-center", 
             link: "https://github.com/ValeriodelleFave/app-center",
-            isDone: true
+            isDone: false
         },
         {
             title: "FitCalculator", 
@@ -80,7 +85,7 @@ function setItems() {
             title: "Real_Life", 
             link: "https://github.com/ValeriodelleFave/Real_Life",
             isDone: false
-        }
+        },
     ];
 
     for (const app of apps) {
@@ -89,7 +94,7 @@ function setItems() {
         item.onclick = () => { window.open(app.link, "_blank")};
 
         const itemImage = document.createElement("img");
-        itemImage.src = app.isDone ? app.link + "/favicon.ico" : "https://www.bing.com/images/blob?bcid=qObT1g42DgIGmJFpww91r0QOOZmm.....9I";
+        itemImage.src = app.isDone ? app.link + "/favicon.ico" : "";
         itemImage.className = "item-image";
         item.appendChild(itemImage);
 
