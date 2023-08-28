@@ -7,13 +7,45 @@ footer {
     width: 100%;
 }
 
-.content {
+main {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-#container {
-    display: flex;
-    justify-content: space-around;
+main h1 {
+    text-align: center;
+}
+
+main #container {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    justify-items: center;
+}
+
+main #container .item {
+    width: 80px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+main #container .item .item-image {
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+main #container .item .item-title {
+    display: block;
+    text-align: center;
+    transition: all 0.2s;
+    visibility: hidden;
+}
+
+main #container .item:hover .item-title {
+    color: blue;
+    transform: translate(0, 10px);
+    visibility: visible;
 }
