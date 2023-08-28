@@ -33,8 +33,6 @@ main #container .item {
 
 main #container .item .item-image {
     height: 80px;
-    border: 1px solid black;
-    border-radius: 50px;
 }
 
 main #container .item .item-title {

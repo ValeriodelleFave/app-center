@@ -88,8 +88,8 @@ function setItems() {
         item.className = "item";
         item.onclick = () => { window.open(app.link, "_blank")};
 
-        const itemImage = document.createElement("div");
-        itemImage.style.backgroundColor = app.isDone ? "green" : "red";
+        const itemImage = document.createElement("img");
+        itemImage.src = app.isDone ? app.link + "/favicon.ico" : "https://www.bing.com/images/blob?bcid=qObT1g42DgIGmJFpww91r0QOOZmm.....9I";
         itemImage.className = "item-image";
         item.appendChild(itemImage);
 
