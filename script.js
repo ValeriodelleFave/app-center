@@ -91,7 +91,11 @@ function setItems() {
     for (const app of apps) {
         const item = document.createElement("div");
         item.className = "item";
-        item.onclick = () => { window.open(app.link, "_blank")};
+        item.onclick = () => { 
+            document.getElementById("iframe").src = app.link;
+            document.getElementById("iframe").scrollIntoView();
+            // window.open(app.link, "_blank")
+        };
 
         const itemImage = document.createElement("img");
         itemImage.src = app.isDone ? app.link + "/favicon.ico" : "";
