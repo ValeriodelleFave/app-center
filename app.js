@@ -1,7 +1,16 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
+app.use(function (req, res, next) {
+    if (req.headers.origin === "https://www.valeriodellefave.dev") {
+        res.setHeader("Access-Control-Allow-Origin", "https://www.valeriodellefave.dev");
+    } else {
+        res.setHeader("Access-Control-Allow-Origin", "https://valeriodellefave.github.io");
+    }
+    next();
+});
 
 // We want to use JSON to send post request to our application
 app.use(bodyParser.json());
