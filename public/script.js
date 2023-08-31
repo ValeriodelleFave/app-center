@@ -73,7 +73,7 @@ function setItems() {
         // },
         {
             title: "FitCalculator", 
-            link: "https://github.com/ValeriodelleFave/FitCalculator",
+            link: "https://valeriodellefave.github.io/FitCalculator",
             isDone: true
         },
         // {
