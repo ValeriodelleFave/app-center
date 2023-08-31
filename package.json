@@ -1,0 +1,24 @@
+{
+  "name": "app-center",
+  "version": "1.0.0",
+  "description": "This is my app center.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValeriodelleFave/app-center.git"
+  },
+  "author": "Valerio delle Fave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ValeriodelleFave/app-center/issues"
+  },
+  "homepage": "https://github.com/ValeriodelleFave/app-center#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
