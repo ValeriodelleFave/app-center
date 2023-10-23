@@ -68,7 +68,7 @@ function setItems() {
         // },
         {
             title: "blog", 
-            link: "https://github.com/ValeriodelleFave/blog",
+            link: "https://valeriodellefave.github.io/ValeriodelleFave/blog",
             isDone: false
         },
         {
