@@ -66,11 +66,11 @@ function setItems() {
         //     link: "https://github.com/ValeriodelleFave/guide",
         //     isDone: false
         // },
-        // {
-        //     title: "app-center", 
-        //     link: "https://github.com/ValeriodelleFave/app-center",
-        //     isDone: false
-        // },
+        {
+            title: "blog", 
+            link: "https://github.com/ValeriodelleFave/blog",
+            isDone: false
+        },
         {
             title: "FitCalculator", 
             link: "https://valeriodellefave.github.io/FitCalculator",
